@@ -21,7 +21,7 @@ app.use("/api/v1/user", userRoute);
 
 
 const start = async() =>{
-  const connectionDB = await mongoose.connect("mongodb://localhost:27017/video-app");
+  const connectionDB = await mongoose.connect("mongodb+srv://dhirajkumarp715_db_user:AHiTZKs1mqzhyWia@cluster0.o0vpgdc.mongodb.net/?appName=Cluster0");
   console.log(`MONGO Connected DB HOST:${connectionDB.connection.host}`)
   server.listen(app.get("port"),()=>{
     console.log("Listening on port 8000")
