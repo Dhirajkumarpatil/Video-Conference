@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 export const AuthContext = createContext({});
 
 const client = axios.create({
-  baseURL: "http://localhost:8000/api/v1/user"
+  baseURL: "https://my-backend-ffjr.onrender.com"
 });
 
 export const AuthProvider = ({ children }) => {
